@@ -7,3 +7,4 @@ https://www.codewars.com/kata/5772382d509c65de7e000982 - 5-1
 https://replit.com/languages/ruby - ruby online compiler
 # Rspec_and_katas
 # softserve_rspec
+# softserve_katas
