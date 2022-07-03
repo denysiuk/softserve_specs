@@ -1,4 +1,7 @@
 def queue_time(customers, n)
+  if n <= 0
+    return 'Supermarket is closed'
+  end
   all_tills = Array.new(n).fill(0)
   customers.each do |customer|
     index = all_tills.each_with_index.min_by { |element| element.first }.last
