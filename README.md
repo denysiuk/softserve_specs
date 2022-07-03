@@ -8,3 +8,4 @@ https://replit.com/languages/ruby - ruby online compiler
 # Rspec_and_katas
 # softserve_rspec
 # softserve_katas
+# softserve_specs
