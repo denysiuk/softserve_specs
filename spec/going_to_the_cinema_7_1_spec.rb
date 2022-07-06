@@ -1,7 +1,7 @@
-require './lib/going_to_the_cinema_7_1.rb'
+require "./lib/going_to_the_cinema_7_1.rb"
 
-describe '#movie' do
-  context 'when using positive values' do
+describe "#movie" do
+  context "when using positive values" do
     input_positive_values = [[500, 15, 0.9],
                              [100, 10, 0.95],
                              [250, 10, 0.8],
@@ -13,21 +13,21 @@ describe '#movie' do
     end
   end
 
-  context 'when using negative values' do
+  context "when using negative values" do
     it "returns 'Enter positive values'" do
-      expect(movie(-5, -15, -0.9)).to eql('Enter positive values')
+      expect(movie(-5, -15, -0.9)).to eql("Enter positive values")
     end
   end
 
-  context 'when using float values' do
+  context "when using float values" do
     it "returns 'Enter whole values'" do
-      expect(movie(95.5, 15, 0.9)).to eql('Enter whole values')
+      expect(movie(95.5, 15, 0.9)).to eql("Enter whole values")
     end
   end
 
-  context 'when using wrong value for percent' do
+  context "when using wrong value for percent" do
     it "returns 'Percent should be one or less'" do
-      expect(movie(200, 15, 1.25)).to eql('Percent should be one or less')
+      expect(movie(200, 15, 1.25)).to eql("Percent should be one or less")
     end
   end
 end

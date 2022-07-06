@@ -1,7 +1,7 @@
-require './lib/fibo_akin_5_1.rb'
+require "./lib/fibo_akin_5_1.rb"
 
-describe '#length_sup_u_k' do
-  context 'when using positive values' do
+describe "#length_sup_u_k" do
+  context "when using positive values" do
     input_length_sup_u_k = [[50, 25],
                             [3332, 973],
                             [2941, 862],
@@ -13,21 +13,21 @@ describe '#length_sup_u_k' do
     end
   end
 
-  context 'when using negative values' do
+  context "when using negative values" do
     it "should return 'Enter positive values'" do
-      expect(length_sup_u_k(-3, -134)).to eql('Enter positive values')
+      expect(length_sup_u_k(-3, -134)).to eql("Enter positive values")
     end
   end
 
-  context 'when using float values' do
+  context "when using float values" do
     it "should return 'Enter whole values'" do
-      expect(length_sup_u_k(2.5, 55.1)).to eql('Enter whole values')
+      expect(length_sup_u_k(2.5, 55.1)).to eql("Enter whole values")
     end
   end
 end
 
-describe '#comp' do
-  context 'when using positive values' do
+describe "#comp" do
+  context "when using positive values" do
     input_comp = [[74626],
                   [71749],
                   [56890],
@@ -39,15 +39,15 @@ describe '#comp' do
     end
   end
 
-  context 'when using negative values' do
+  context "when using negative values" do
     it "should return 'Enter positive values'" do
-      expect(comp(-134)).to eql('Enter positive values')
+      expect(comp(-134)).to eql("Enter positive values")
     end
   end
 
-  context 'when using float values' do
+  context "when using float values" do
     it "should return 'Enter whole values'" do
-      expect(comp(123.123)).to eql('Enter whole values')
+      expect(comp(123.123)).to eql("Enter whole values")
     end
   end
 end
